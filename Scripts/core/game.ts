@@ -33,19 +33,20 @@ namespace core {
     let over: scenes.Over;
     let play: scenes.Play;
 
-    
+
 
     // asset manifest for images and sounds
     let assetData:objects.Asset[] = [
         { id: "startButton", src: "../../Assets/images/startButton.png" },
         { id: "restartButton", src: "../../Assets/images/restartButton.png" },
         { id: "nextButton", src: "../../Assets/images/nextButton.png" },
-        { id: "exitButton", src: "../../Assets/images/exitButton.png" }
+        { id: "exitButton", src: "../../Assets/images/exitButton.png" },
+        { id: "layer1", src: "../../Assets/images/background.png" }
     ];
 
     /**
      * This method preloads assets for the game
-     * 
+     *
      * @method preload
      * @returns {void}
      */
@@ -59,7 +60,7 @@ namespace core {
 
     /**
      * This method is the entry point for the application
-     * 
+     *
      * @method init
      * @return {void}
      */
@@ -76,7 +77,7 @@ namespace core {
 
     /**
      * This is the main game loop
-     * 
+     *
      * @method gameLoop
      * @param {createjs.Event} event
      * @returns {void}
@@ -91,7 +92,7 @@ namespace core {
 
     /**
      * This is the startButton click event handler
-     * 
+     *
      * @param {createjs.MouseEvent} event
      */
     function startButtonClick(event: createjs.MouseEvent) {
