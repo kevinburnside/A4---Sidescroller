@@ -5,6 +5,8 @@
 /// <reference path="../objects/label.ts"/>
 /// <reference path="../objects/scene.ts"/>
 /// <reference path="../objects/background.ts"/>
+/// <reference path="../objects/platform.ts"/>
+/// <reference path="../objects/player.ts"/>
 /// <reference path="../scenes/over.ts"/>
 /// <reference path="../scenes/play.ts"/>
 /// <reference path="../scenes/menu.ts"/>

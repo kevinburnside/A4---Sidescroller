@@ -12,7 +12,9 @@ var core;
         { id: "restartButton", src: "../../Assets/images/restartButton.png" },
         { id: "nextButton", src: "../../Assets/images/nextButton.png" },
         { id: "exitButton", src: "../../Assets/images/exitButton.png" },
-        { id: "layer1", src: "../../Assets/images/background.png" }
+        { id: "backgroundImage", src: "../../Assets/images/background.png" },
+        { id: "platformImage", src: "../../Assets/images/platform.png" },
+        { id: "playerImage", src: "../../Assets/images/plane.png" }
     ];
     function preload() {
         core.assets = new createjs.LoadQueue();

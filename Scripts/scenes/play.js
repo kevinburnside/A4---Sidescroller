@@ -11,12 +11,22 @@ var scenes;
             _super.call(this);
         }
         Play.prototype.Start = function () {
-            this.layer1 = new objects.Background("layer1");
-            this.addChild(this.layer1);
+            this.background = new objects.Background("backgroundImage");
+            this.addChild(this.background);
+            this.platform = new objects.Platform("platformImage");
+            this.addChild(this.platform);
+            this.player = new objects.Player("playerImage");
+            this.addChild(this.player);
+            core.stage.on("click", this.clickMove, this);
             core.stage.addChild(this);
         };
         Play.prototype.Update = function () {
-            this.layer1.update();
+            this.background.update();
+            this.platform.update();
+            this.player.update();
+        };
+        Play.prototype.clickMove = function (event) {
+            this.player.changeY();
         };
         Play.prototype._startButtonClick = function (event) {
             core.scene = config.Scene.OVER;
